@@ -1,2 +1,1 @@
-dig example.com +nostats +nocomments +nocmd
-mackenziehusmann.me.     3600    IN A     192.30.252.153
+mackenziehusmann.me
