@@ -1,0 +1,174 @@
+.homepage *{
+     font-family: 'Quicksand', sans-serif;
+}
+.homepage header {
+    padding: 1em;
+    padding-left: 8em;
+}
+
+.homepage header img {
+    display: inline-block;
+    width: 2em;
+    border-radius: 50%;
+}
+
+.homepage header h1 {
+    display: inline-block;
+    color: #3a3a3a;
+    font-size: 100%;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 8em;
+    overflow: hidden;
+    background-color: #ededed;
+}
+
+.navbar a{
+    float: left;
+    color: #3a3a3a;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em;
+
+}
+
+.navbar a:hover {
+    background-color: #b7b7b7;
+    color: white;
+}
+
+
+/**/
+
+.homepage body{
+   max-width: 100%; 
+}
+
+.hello img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.textover {
+    position: relative;
+    display: inline-block;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -100%, -50% );
+    text-align: left;
+    color: #3a3a3a;
+}
+
+.hello h2{
+    font-size: 300%;
+    font-family: 'Vidaloka', serif;
+    padding-left: 3em;
+}
+
+.hello p{
+    font-size: 130%;
+    padding-left: 7em;
+}
+
+/**/
+
+.row {
+    padding-left: 8em;
+}
+
+.row p{
+    float: left;
+    width: 25%;
+    padding: 0;
+}
+.row h2 {
+    padding-top: 3em;
+}
+.row:after{
+    
+}
+.row:after{
+	clear: both;
+	content: “”;
+	display: block;
+	overflow: auto;
+}
+.row img {
+    float: left;
+    width: 30%;
+}
+
+/**/
+
+.homepage footer{
+    text-decoration: none;
+    text-align: center;
+    font-size: 75%;
+	clear: both;
+	content: “”;
+	display: block;
+	overflow: auto;
+    padding-top: 5em;
+}
+
+/*Resume CSS Below*/
+
+.resume * {
+    font-family: Helvetica;
+    color: white;
+}
+    
+.resume {
+    background-color: #f7cac9;
+    width: 75%;
+    font-size: 100%;
+}
+
+.mackenziehusmann {
+    padding: 1em;;
+    color: white;
+    text-align: left;
+    font-size: 300%;
+    width: 100%;
+    text-shadow: 2px 2px #FF0000;
+    
+}
+
+.resbod{
+    padding-left: 2em;
+}
+.resbod h2 {
+    margin-left: 1em;
+}
+
+.resbod h3 {
+    margin-left: 2em;
+}
+
+.resbod p {
+    margin-left: 2em;
+    float: clear;
+}
+.resbod a {
+    text-decoration: none;
+    color: #f87875;
+}
+.resbod ul {
+    list-style-type: none;
+}
+
+.resbod footer {
+    text-align: left;
+    margin-left: 2em;
+    margin-top: 2em;
+    color: #e0b4b3;
+}
+
