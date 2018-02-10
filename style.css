@@ -1,5 +1,6 @@
-.homepage *{
+.homepage {
      font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
 }
 .homepage header {
     padding: 1em;
@@ -18,7 +19,7 @@
     font-size: 100%;
 }
 
-.navbar {
+nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -27,7 +28,7 @@
     background-color: #ededed;
 }
 
-.navbar a{
+nav a{
     float: left;
     color: #3a3a3a;
     text-align: center;
@@ -36,13 +37,10 @@
 
 }
 
-.navbar a:hover {
+nav a:hover {
     background-color: #b7b7b7;
     color: white;
 }
-
-
-/**/
 
 .homepage body{
    max-width: 100%; 
@@ -76,39 +74,36 @@
 .hello p{
     font-size: 130%;
     padding-left: 7em;
+        
 }
 
-/**/
-
-.row {
+.homepage .row {
     padding-left: 8em;
 }
 
-.row p{
+.homepage .row p{
     float: left;
     width: 25%;
     padding: 0;
 }
-.row h2 {
+.homepage .row h2 {
     padding-top: 3em;
 }
-.row:after{
+.homepage .row:after{
     
 }
-.row:after{
+.homepage .row:after{
 	clear: both;
 	content: “”;
 	display: block;
 	overflow: auto;
 }
-.row img {
+.homepage .row img {
     float: left;
     width: 30%;
 }
 
-/**/
-
-.homepage footer{
+.homepagefoot{
     text-decoration: none;
     text-align: center;
     font-size: 75%;
@@ -121,7 +116,7 @@
 
 /*Resume CSS Below*/
 
-.resume * {
+.resume {
     font-family: Helvetica;
     color: white;
 }
@@ -172,3 +167,164 @@
     color: #e0b4b3;
 }
 
+/*My Favorite Places*/
+
+.places {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    background-color: #f5ede1;
+    color: white;
+    
+
+}
+
+.places header {
+    font-size: 200%;
+    margin: 2em;
+    background-color: tan;
+    color: white;
+    padding: 2em;
+}
+
+.places h1{
+    background-color: #256238;
+    padding: 1em;
+    color: white;
+    font-size: 100%;
+}
+
+.places h2 {
+    font-size: 500%;
+    border: 1em black;
+    padding: 1em;
+}
+
+.places {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.places section {
+    margin: 3em;
+    padding: 1em;
+    box-sizing: inherit;
+}
+
+
+.places h3 {
+    font-size: 150%;
+    padding: 1em;
+}
+
+.cle {
+    background-image: url("http://www.fiveyardslant.com/wp-content/uploads/2016/03/downtown-cleveland.jpg");
+    background-position: center;
+    background-attachment: fixed, scroll, fixed;
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-size: 100%, cover, auto;
+    
+}
+
+.tres {
+    background-image: url("https://wa4.jetcdn.com/photos/hyatt-regency-clearwater-beach-resort-spa/N7Qs_1NZ/beach-beachfront-coast-nature.jpeg?w=970&h=600&dpr=1");
+    background-position: center;
+    background-attachment: fixed, scroll, fixed;
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-size: 100%, cover, auto;
+}
+
+.nfalls {
+    background-image: url("https://tce-live2.s3.amazonaws.com/media/media/6ee4c921-2ba5-47cb-bfc5-8eebd83e3d65.jpg");
+    background-position: center;
+    background-attachment: fixed, scroll, fixed;
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-size: 100%, cover, auto;
+}
+
+.vail {
+    background-image: url("http://cdn.wall-pix.net/albums/landscapes-natural/00005332.jpg");
+    background-position: center;
+    background-attachment: fixed, scroll, fixed;
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-size: 100%, cover, auto;
+}
+
+.hawaii {
+    background-image: url("https://www.journeyera.com/wp-content/uploads/2016/07/hawaii-images-06080-1-e1468815827117-1080x635.jpg");
+    background-position: center;
+    background-attachment: fixed, scroll, fixed;
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-size: 100%, cover, auto;
+}
+
+.places img {
+    width: 25%;
+}
+
+.places p{
+    padding: 3em;
+}
+
+.places section img {
+    padding: 1em;
+}
+
+/** CLEARFIX stops the floats! **/
+
+.places .row::after {
+    content: "";
+    clear: both;
+    display: block;}
+
+.placesfoot{
+    text-decoration: none;
+    text-align: center;
+    font-size: 75%;
+	clear: both;
+	content: “”;
+	display: block;
+	overflow: auto;
+    padding-top: 5em;
+    color: black;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 50%;
+    margin: 2em;
+}
+
+.button:hover {
+    background-color: #bebcbc;
+    color: white;
+}
+
+
+/** Float ALL the column classes **/
+
+[class*="col-"] {
+    float: left;  }
+
+
+/** Assign widths to column classes **/
+
+.col-1 {width: 8.33%;}
+
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
