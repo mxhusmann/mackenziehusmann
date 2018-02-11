@@ -1,31 +1,32 @@
 .homepage {
-     font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 100%;
 }
 .homepage header {
     padding: 1em;
-    padding-left: 8em;
 }
 
 .homepage header img {
     display: inline-block;
-    width: 2em;
     border-radius: 50%;
+    padding-left: 8em;
+    width: 2em;
+    align-content: 
 }
 
 .homepage header h1 {
     display: inline-block;
     color: #3a3a3a;
-    font-size: 100%;
+    font-size: 2em;
 }
 
 nav {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-left: 8em;
+    display: block;
+    padding-left: 9em;
     overflow: hidden;
     background-color: #ededed;
+    width: 100%;
 }
 
 nav a{
@@ -51,62 +52,58 @@ nav a:hover {
     width: 100%;
     height: auto;
 }
-.textover {
+.hello {
     position: relative;
     display: inline-block;
-}
-
-.text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate( -100%, -50% );
-    text-align: left;
-    color: #3a3a3a;
+    background-image: url(marble.jpg);
+    background-position: top;
+    background-attachment: fixed, scroll, fixed;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%, cover, auto;
+    height: 100%;
+    
+    font-size: 100%;
+    padding: 4em;
 }
 
 .hello h2{
-    font-size: 300%;
+    font-size: 4em;
     font-family: 'Vidaloka', serif;
-    padding-left: 3em;
+    padding-left: 2em;
 }
 
 .hello p{
-    font-size: 130%;
+    font-size: 1em;
     padding-left: 7em;
         
 }
 
-.homepage .row {
-    padding-left: 8em;
+.homepage .about {
+    padding-left: 11em;
+    padding-top: 2em;
 }
 
-.homepage .row p{
-    float: left;
-    width: 25%;
-    padding: 0;
-}
-.homepage .row h2 {
-    padding-top: 3em;
-}
 .homepage .row:after{
     
 }
-.homepage .row:after{
+.homepage .row::after{
 	clear: both;
 	content: “”;
 	display: block;
 	overflow: auto;
 }
-.homepage .row img {
-    float: left;
-    width: 30%;
+
+.homepage .about img {
+    width: 50%;
+    float: right;
+    padding-top: 2em;
 }
+
 
 .homepagefoot{
     text-decoration: none;
     text-align: center;
-    font-size: 75%;
+    font-size: .8em;
 	clear: both;
 	content: “”;
 	display: block;
@@ -119,19 +116,20 @@ nav a:hover {
 .resume {
     font-family: Helvetica;
     color: white;
+    font-family: 100%;
 }
     
 .resume {
     background-color: #f7cac9;
     width: 75%;
-    font-size: 100%;
+    font-size: 1em;
 }
 
 .mackenziehusmann {
     padding: 1em;;
     color: white;
     text-align: left;
-    font-size: 300%;
+    font-size: 3em;
     width: 100%;
     text-shadow: 2px 2px #FF0000;
     
@@ -179,7 +177,7 @@ nav a:hover {
 }
 
 .places header {
-    font-size: 200%;
+    font-size: 2em;
     margin: 2em;
     background-color: tan;
     color: white;
@@ -190,11 +188,11 @@ nav a:hover {
     background-color: #256238;
     padding: 1em;
     color: white;
-    font-size: 100%;
+    font-size: 1em;
 }
 
 .places h2 {
-    font-size: 500%;
+    font-size: 5em;
     border: 1em black;
     padding: 1em;
 }
@@ -280,7 +278,7 @@ nav a:hover {
 .placesfoot{
     text-decoration: none;
     text-align: center;
-    font-size: 75%;
+    font-size: .8em;
 	clear: both;
 	content: “”;
 	display: block;
