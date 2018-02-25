@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout A</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+    <style>
+* {
+    font-family: 'Indie Flower', cursive;
+    font-size: 100%;
+    color: white;
+}
+
+        body{
+            background-image: url("http://www.brightonunitedmethodistchurch.com/wp-content/uploads/2013/08/chalkboard-background2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 6em;
+            height: 100vh;
+        }
+        p{
+            font-size: 200%;
+            text-align: center;
+            margin: -0.1em;
+        }
+        .fontchange {
+            font-family: 'Helvetica', sans-serif;
+            font-size: 90%;
+            text-align: left;
+            padding-top: 8em;
+        }
+        .salsa{
+            width: 100%;
+        }
+        .veggies{
+            width: 90%;
+        }
+        .chipotle{
+            width: 10%;
+            float: right;
+            padding-right: 5em;
+        }
+        .small{
+            font-size: 90%;
+        }
+        .medium{
+            font-size:150%;
+        }
+        .large{
+            font-size: 300%;
+        }
+        .logo{
+            float: right;
+        }
+        .fontchange{
+            text-align: right;
+        }
+        
+/** TO DEFAULT ALL COLUMN CLASSES TO 100% AND FLOAT THEM LEFT **/
+[class*="col-"] {
+    float:left; 
+    width:100%; 
+    margin: 0;
+
+}
+/** TO CONTAIN A 12-COLUMN SUM IN A SINGLE ROW  **/
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    </style>
+</head>
+    
+<body>
+
+    <section class="row">
+        <div class="col-4">
+        <img class="veggies" alt="veggies" src="http://www.myth-trade.com/wp-content/uploads/2016/03/Veg.png">
+        </div>
+    <div class="col-4">
+        <p class="medium">~ WE'D BUY ~</p>  
+        <p>TINNED SALSA,</p>
+        <p class="medium">BUT WE'RE TOO BUSY</p>
+        <p class="large">CHOPPING</p>
+        <p class="large">TOMATOES</p>
+        <p class="small">* WORTH THE EFFORT *</p>
+    </div>
+        <div class="col-4">
+            <img class="salsa" alt="salsa" src="https://www.buffalowildwings.com/globalassets/modifiers/10040005-salsa.png">
+        </div>
+    </section>
+    <section class="logo row">
+        <div class="col-12">
+            <p class="fontchange">GOURMET BURRITOS &amp; TACOS
+            <img class="chipotle" alt="chipotle logo" src="https://vignette.wikia.nocookie.net/secretmenu/images/1/1c/1024px-Chipotle_Mexican_Grill_logo.svg.png/revision/latest?cb=20141030174921"></p>
+            </div>
+    </section>
+</body>
+</html>
+
+
+
+
+
+
+
