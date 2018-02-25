@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout B</title>
+    
+    <style>
+* {
+    box-sizing: border-box;
+}
+        .one{
+            border: 4px solid red;
+            padding: 1%;
+            height: 33em;
+        }
+        .two{
+            height: 13em;
+        }
+        .tall{
+            height: 10em;
+        }
+        .col10{
+            height:10em;
+        }
+        .col30{
+            height: 30em;
+        }
+        div > .row{
+            border: 4px solid red;
+            padding: 1%;
+        }
+         .row{
+            border: 8px solid blue;
+            padding: 1%;
+        } 
+
+        
+/** TO DEFAULT ALL COLUMN CLASSES TO 100% AND FLOAT THEM LEFT **/
+[class*="col-"] {
+    float:left; 
+    border: 4px solid red;
+    margin: 0;
+
+}
+/** TO CONTAIN A 12-COLUMN SUM IN A SINGLE ROW  **/
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    </style>
+</head>
+    
+<body>
+    <section class="one row">
+        <div class="col30 col-4"></div>
+        <div class="col-8">
+            <div class="tall row"></div>
+            <div class="tall row"></div>
+            <div class="tall row"></div>
+        </div>
+    </section>
+    
+    <section class="two row">
+        <div class="col10 col-3"></div>
+        <div class="col10 col-3"></div>
+        <div class="col10 col-3"></div>
+        <div class="col10 col-3"></div>
+    </section>
+    </body>
+</html>
