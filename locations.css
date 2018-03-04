@@ -1,0 +1,268 @@
+/*My Favorite Places*/
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+}
+body {
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+header img {
+    display: none;
+}
+header {
+    display: inline-block;
+    font-size: 200%;
+}
+nav {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    background-color: #ededed;
+    font-size: 100%;
+}
+nav a{
+    color: #3a3a3a;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+    width: 100%;
+}
+nav a:hover {
+    color: white;
+}
+nav ul li {
+    list-style: none;
+    display: block;
+}
+.fullmenu {
+    display: none; 
+}
+nav:hover > ul {
+    display: block;
+}
+.hello {
+    display: inline-block;
+    background-image: url(marble.jpg);
+    background-position: top;
+    background-attachment: fixed, scroll, fixed;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 500%, cover, auto;
+    font-size: 100%;
+}
+.hello h2{
+    font-size: 4em;
+    font-family: 'Vidaloka', serif;
+}
+.hello p{
+    font-size: 1em;      
+}
+h1{
+    padding: 1em;
+    color: black;
+    font-size: 1em;
+}
+p{
+        padding: 3em;
+}
+
+div > h2 {
+    font-size: 200%;
+    border: 8px solid black;
+    padding: 1em;
+    border-radius: 1500px;
+    text-align: center;
+} 
+section {
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 1em;
+    box-sizing: inherit;
+}
+h3 {
+    font-size: 150%;
+    padding: 1em;
+}
+section img {
+    padding: 1em;
+    width: 30%;
+}
+footer{
+    text-decoration: none;
+    text-align: center;
+    font-size: .8em;
+	clear: both;
+	content: “”;
+	display: block;
+	overflow: auto;
+    padding-top: 5em;
+    color: black;
+}
+.button {
+    background-color: black;
+    color: white;
+    padding: 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 100%;
+    margin: 1em;
+}
+.button:hover {
+    background-color: #bebcbc;
+    color: white;
+}
+.moreinfo{
+    display: none;
+}
+.last {
+    color: #f87875;
+}
+.row{
+    float: left;
+    width: 100%;
+}
+
+/** TO DEFAULT ALL COLUMN CLASSES TO 100% AND FLOAT THEM LEFT **/
+[class*="col-"] {
+    float:left; 
+    width:100%; 
+    margin: 0;
+}
+
+/** TO CONTAIN A 12-COLUMN SUM IN A SINGLE ROW  **/
+.row:after {
+    content: "";
+    clear: both; display: block;
+}
+
+/** TO TRIGGER DESKTOP VIEW AND SET TABLET COLUMN WIDTHS**/
+@media only screen and (min-width: 768px){
+    header {
+        font-size: 150%;
+    }
+    .hello{
+        background-size: 200%;
+    }
+    div > h2 {
+        font-size: 300%;
+    }
+    nav {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    background-color: #ededed;
+    font-size: 100%;
+}
+nav a{
+    color: #3a3a3a;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+    width: 100%;
+}
+nav a:hover {
+    color: white;
+}
+nav ul li {
+    list-style: none;
+    display: block;
+}
+.fullmenu {
+    display: none; 
+}
+nav:hover > ul {
+    display: block;
+}
+section img {
+    padding: 1em;
+    width: 50%;
+}
+.col-t-1 {width: 8.33%;}
+.col-t-2 {width: 16.66%;}
+.col-t-3 {width: 25%;}
+.col-t-4 {width: 33.33%;}
+.col-t-5 {width: 41.66%;}
+.col-t-6 {width: 50%;}
+.col-t-7 {width: 58.33%;}
+.col-t-8 {width: 66.66%;}
+.col-t-9 {width: 75%;}
+.col-t-10 {width: 83.33%;}
+.col-t-11 {width: 91.66%;}
+.col-t-12 {width: 100%;}
+
+}
+
+/** TO TRIGGER DESKTOP VIEW AND SET DESKTOP COLUMN WIDTHS**/
+@media only screen and (min-width: 1024px){
+    .homepage header img {
+        display: block;
+    }
+    header {
+        font-size: 100%;
+    }
+    .hello {
+        background-size: 100%;
+    }
+    div > h2 {
+        font-size: 500%;
+    }
+    nav > .menu {
+        display: none;
+    }
+    .fullmenu {
+        display: block;
+        padding: 0.5em;
+    }
+    nav > ul {
+        width:100%;
+        display: block;
+        position: relative;
+        float: left;
+    }
+    ul li {
+        display: block;
+        float: left;
+        position: relative;
+    }
+    p{
+        padding: 3em;
+    }
+    .button {
+        background-color: black;
+        color: white;
+        padding: 1em;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 100%%;
+        margin: 2em;
+    }
+    .button:hover {
+        background-color: #bebcbc;
+        color: white;
+    }
+    .moreinfo{
+        display: block;
+    }
+    
+.col-d-1 {width: 8.33%;}
+.col-d-2 {width: 16.66%;}
+.col-d-3 {width: 25%;}
+.col-d-4 {width: 33.33%;}
+.col-d-5 {width: 41.66%;}
+.col-d-6 {width: 50%;}
+.col-d-7 {width: 58.33%;}
+.col-d-8 {width: 66.66%;}
+.col-d-9 {width: 75%;}
+.col-d-10 {width: 83.33%;}
+.col-d-11 {width: 91.66%;}
+.col-d-12 {width: 100%;}
+
+}

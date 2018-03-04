@@ -1,0 +1,155 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+body{
+   max-width: 100%; 
+}
+header img {
+    display: none;
+}
+header h1 {
+    display: inline-block;
+    color: #3a3a3a;
+}
+nav {
+    display: block;
+    overflow: hidden;
+    background-color: #ededed;
+    width: 100%;
+}
+
+nav a{
+    color: #3a3a3a;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+nav a:hover {
+    background-color: #b7b7b7;
+    color: white;
+}
+nav ul li {
+    list-style: none;
+    display: block;
+}
+.fullmenu {
+    display: none; 
+}
+nav:hover > ul {
+    display: block;
+}
+
+.hello {
+    display: inline-block;
+    background-image: url(marble.jpg);
+    background-position: top;
+    background-attachment: fixed, scroll, fixed;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 500%, cover, auto;
+    font-size: 100%;
+    padding: 4em;
+}
+.hello h2{
+    font-size: 4em;
+    font-family: 'Vidaloka', serif;
+}
+.hello p{
+    font-size: 1em;      
+}
+.about {
+    padding-top: 2em;
+}
+.about h2 {
+    font-size: 200%;
+}
+.about img {
+    width: 100%;
+    float: right;
+    padding-top: 2em;
+}
+footer{
+    text-decoration: none;
+    text-align: center;
+    font-size: .8em;
+	clear: both;
+	content: “”;
+	display: block;
+	overflow: auto;
+    padding-top: 5em;
+}
+
+/** TO DEFAULT ALL COLUMN CLASSES TO 100% AND FLOAT THEM LEFT **/
+[class*="col-"] {
+    float:left; 
+    width:100%; 
+    margin: 0;
+}
+/** TO CONTAIN A 12-COLUMN SUM IN A SINGLE ROW  **/
+.row:after {
+    content: "";
+    clear: both; display: block;
+}
+/** TO TRIGGER DESKTOP VIEW AND SET DESKTOP COLUMN WIDTHS**/
+@media only screen and (min-width: 1024px){
+   header > img {
+        display: inline-block;
+        border-radius: 50%;
+        width: 3em;
+        align-content: left;
+        padding-left: 1em;
+    }
+    .hello {
+        position: relative;
+        display: inline-block;
+        background-image: url(marble.jpg);
+        background-position: top;
+        background-attachment: fixed, scroll, fixed;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 100%, cover, auto;
+        height: 100%;
+        font-size: 100%;
+        padding: 4em;
+    } 
+
+    nav > .menu {
+        display: none;
+    }
+    .fullmenu {
+        display: block;
+    }
+    nav > ul {
+        width:100%;
+        max-width: 800px;
+        display: block;
+        position: relative;
+    }
+    ul li {
+        display: block;
+        float: left;
+        position: relative;
+    }
+    .about{
+        font-size: 100%;
+        padding-left: 3em;
+    }
+    .about img{
+        width: 50%;
+        margin-right: 10em;
+    }
+    
+.col-d-1 {width: 8.33%;}
+.col-d-2 {width: 16.66%;}
+.col-d-3 {width: 25%;}
+.col-d-4 {width: 33.33%;}
+.col-d-5 {width: 41.66%;}
+.col-d-6 {width: 50%;}
+.col-d-7 {width: 58.33%;}
+.col-d-8 {width: 66.66%;}
+.col-d-9 {width: 75%;}
+.col-d-10 {width: 83.33%;}
+.col-d-11 {width: 91.66%;}
+.col-d-12 {width: 100%;}
+
+}

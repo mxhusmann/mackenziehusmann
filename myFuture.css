@@ -1,0 +1,125 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    font-size: 100%''
+}
+header img {
+    display: none;
+}
+header h1 {
+    display: inline-block;
+    color: #3a3a3a;
+}
+.hello {
+    display: inline-block;
+    background-image: url(marble.jpg);
+    background-position: top;
+    background-attachment: fixed, scroll, fixed;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 300%, cover, auto;
+    font-size: 100%;
+    padding: 4em;
+}
+h2{
+    font-size: 4em;
+    font-family: 'Vidaloka', serif;
+} 
+p{
+    font-size: 1em;      
+}
+.button{
+    display: none;
+}
+.row{
+    float:left;
+}
+footer {
+    background-color: #ededed;
+    padding: 2em;
+}
+p > img{
+    display: none;
+}
+/** TO DEFAULT ALL COLUMN CLASSES TO 100% AND FLOAT THEM LEFT **/
+[class*="col-"] {
+    float:left; 
+    width:100%; 
+    margin: 0;
+}
+/** TO CONTAIN A 12-COLUMN SUM IN A SINGLE ROW  **/
+.row:after {
+    content: "";
+    clear: both; 
+    display: block;
+}
+/** TO TRIGGER DESKTOP VIEW AND SET DESKTOP COLUMN WIDTHS**/
+@media only screen and (min-width: 1024px){
+    .button {
+        display: block;
+        background-color: black;
+        color: white;
+        padding: 1em;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 100%;
+        margin: 1em;
+}
+.button:hover {
+    background-color: #bebcbc;
+    color: white;
+}
+    .hello{
+        background-size: 100%
+    }
+    p > img{
+        display: block;
+    }
+    .six{
+        background-image: url(https://www.minibackdrops.com/wp-content/uploads/2017/02/green-marble-2-web.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100%, cover;
+        color: white;
+        padding-left: 0.5em;
+    }
+    .one{
+        background-image: url(http://moziru.com/images/texture-clipart-marble-11.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100%, cover;
+        color: white; 
+        padding-left: 0.5em;
+    }
+    .five{
+        background-image: url(http://www.photoshoplayer.com/wp-content/uploads/2013/08/marble_24_200_by_robostimpy-d38w29r.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100%, cover;
+        color: white; 
+        padding-left: 0.5em;
+    }
+    .ten{
+        background-image: url(https://thumbs.dreamstime.com/b/red-marble-texture-1662254.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100%, cover;
+        color: white; 
+        padding-left: 0.5em;
+    }
+    
+.col-d-1 {width: 8.33%;}
+.col-d-2 {width: 16.66%;}
+.col-d-3 {width: 25%;}
+.col-d-4 {width: 33.33%;}
+.col-d-5 {width: 41.66%;}
+.col-d-6 {width: 50%;}
+.col-d-7 {width: 58.33%;}
+.col-d-8 {width: 66.66%;}
+.col-d-9 {width: 75%;}
+.col-d-10 {width: 83.33%;}
+.col-d-11 {width: 91.66%;}
+.col-d-12 {width: 100%;}
+
+}
